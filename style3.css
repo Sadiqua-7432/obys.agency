@@ -1,0 +1,118 @@
+@font-face{
+    font-family: "Plain Light";
+    src:url("./Plain-Light.ttf")
+    format("truetype");
+}
+@font-face{
+    font-family: "Silk Serif Italic";
+    src:url("./Silk Serif Italic.ttf")
+    format("truetype");
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+   font-family: "Plain Light";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    
+}
+
+#loader{
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    background-color: #0b0b0b;
+   padding:30vh 15vw
+}
+#timer{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap:1vw;
+}
+#timer h5,h6{
+    /* background-color: red; */
+    font-size: 2.5vw;
+      font-family: "Silk Serif Italic";
+      font-weight: 500;
+}
+
+.line{
+    /* background-color: red; */
+    height: 100px;
+     overflow: hidden;
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     gap:1vw;
+
+}
+.line h1{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 5.5vw;
+   
+}
+.line h2{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 5.5vw;
+    animation-name: anime;
+    opacity: 0;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+#timer h5{
+    /* background-color: red; */
+    width: 5vw;
+    text-align: right;
+}
+.line #your{
+    padding: 0 5vw;
+}
+@keyframes anime{
+    0%{
+         font-family: "Plain Light";
+        -webkit-text-stroke: 0.5px white;
+        color:white;
+        font-weight: 500;
+         opacity:1; 
+    }
+    45%{
+         font-family: "Plain Light";
+         -webkit-text-stroke: 0.5px white;
+         font-weight: 500;
+         color: white;
+         opacity: 0;
+    }
+    50%{
+        font-family: "Silk Serif Italic";
+        -webkit-text-stroke: 0.5px white;
+        font-weight: 900;
+        color: transparent;
+        opacity:1;
+    }
+    100%{
+        font-family: "Silk Serif Italic";
+        -webkit-text-stroke: 0.5px white;
+        font-weight: 900;
+        color: transparent;
+        opacity: 0;
+    }
+}
+#main{
+    position: relative;
+    background-color: #0b0b0b;
+}
+#pg1{
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+    /* background-color: red; */
+}
